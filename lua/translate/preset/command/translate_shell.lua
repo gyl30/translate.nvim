@@ -15,8 +15,13 @@ function M.cmd(lines, command_args)
     local cmd = "trans"
     local args = {
         "-b",
-        "-no-ansi",
         "-no-autocorrect",
+        "-no-ansi", 
+        "-show-prompt-message=N", 
+        "-show-languages=N",
+        "-show-translation-phonetics=N", 
+        "-show-alternatives=N", 
+        ":zh"
     }
 
     if #options.args then
